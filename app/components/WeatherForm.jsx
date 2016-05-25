@@ -11,13 +11,13 @@ var WeatherForm = React.createClass({
       this.props.onSearch(location);
     }
 
-  },  
+  },
   render : function () {
     return (
       <div>
         <form onSubmit={this.onFormSubmit}>
           <input type="text" ref="location"/>
-          <button>Get Weather</button>
+          <button type="submit">Get Weather</button>
         </form>
       </div>
     );
